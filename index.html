@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101714">
+  <meta name="description" content="A small corner of the internet for whatever comes next.">
+  <title>Somewhere New</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+    :root{color-scheme:dark;--ink:#f0f2e9;--muted:#a9b2a6;--bg:#101714;--lime:#d5ff72;--line:#344038;--card:#171f1b}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,sans-serif;min-height:100vh}
+    .wrap{max-width:1160px;margin:auto;padding:32px 6vw 48px}.nav{display:flex;align-items:center;justify-content:space-between;font-family:'DM Mono',monospace;font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}.mark{display:flex;align-items:center;gap:11px;color:var(--ink)}.dot{width:12px;height:12px;border-radius:50%;background:var(--lime);box-shadow:0 0 20px #d5ff7255}.nav a{color:var(--muted);text-decoration:none}.nav a:hover{color:var(--lime)}
+    main{padding:clamp(90px,17vh,180px) 0 110px;max-width:920px}.eyebrow{font:12px 'DM Mono',monospace;color:var(--lime);letter-spacing:.12em;text-transform:uppercase;display:flex;gap:12px;align-items:center}.eyebrow:before{content:'';height:1px;width:36px;background:var(--lime)}h1{font-size:clamp(56px,10vw,124px);letter-spacing:-.085em;line-height:.94;margin:26px 0 28px;font-weight:600}h1 span{color:var(--lime)}.intro{font-size:clamp(17px,2vw,21px);line-height:1.7;color:#c1c9bf;max-width:560px;margin:0}.actions{display:flex;gap:14px;margin-top:38px;align-items:center;flex-wrap:wrap}.button{background:var(--lime);color:#172017;text-decoration:none;padding:15px 20px;border-radius:4px;font-size:14px;font-weight:800;transition:transform .2s}.button:hover{transform:translateY(-2px)}.note{font:11px 'DM Mono',monospace;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.card{background:var(--card);padding:24px;min-height:145px}.number{font:11px 'DM Mono',monospace;color:var(--lime)}.card h2{font-size:16px;margin:25px 0 8px;letter-spacing:-.02em}.card p{font-size:13px;color:var(--muted);line-height:1.6;margin:0}.footer{display:flex;justify-content:space-between;margin-top:24px;font:11px 'DM Mono',monospace;color:#778278}.footer span:last-child{color:var(--lime)}
+    @media(max-width:650px){.wrap{padding:24px 22px 36px}main{padding:100px 0 80px}.grid{grid-template-columns:1fr}.card{min-height:auto}.card h2{margin:15px 0 6px}.footer{gap:14px;flex-wrap:wrap}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav" aria-label="Main navigation"><div class="mark"><span class="dot"></span> SOMEWHERE NEW</div><a href="mailto:hello@example.com">A small demo ↗</a></nav>
+    <main>
+      <div class="eyebrow">An open page, a fresh start</div>
+      <h1>Make room<br>for <span>what’s next.</span></h1>
+      <p class="intro">Every good thing starts somewhere. This is a little corner of the internet for new ideas, brave first drafts, and whatever you decide to make.</p>
+      <div class="actions"><a class="button" href="mailto:hello@example.com?subject=Let%E2%80%99s%20make%20something">Let’s make something <span aria-hidden="true">↗</span></a><span class="note">A simple site, made to begin.</span></div>
+    </main>
+    <section class="grid" aria-label="A few guiding ideas">
+      <article class="card"><div class="number">01 / BEGIN</div><h2>Start before it’s perfect.</h2><p>The first version only needs to exist. Better things grow from there.</p></article>
+      <article class="card"><div class="number">02 / EXPLORE</div><h2>Follow the interesting bit.</h2><p>Curiosity is a pretty good compass. See where it takes you.</p></article>
+      <article class="card"><div class="number">03 / MAKE</div><h2>Put it out in the world.</h2><p>A small idea becomes real when someone else can see it.</p></article>
+    </section>
+    <footer class="footer"><span>BUILT FOR THE NEXT THING</span><span>YOU’RE RIGHT ON TIME ✳</span></footer>
+  </div>
+</body>
+</html>
